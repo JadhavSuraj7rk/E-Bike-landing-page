@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+
+/*============== 
+             CSS Variables 
+===============*/
+:root {
+  --body-background: #192023;
+  --the-hubles-color: #656df7;
+  --para-color: #e1e2ff;
+  --hero-text-color: #ffffff;
+  --radial-gradient-start: #acb0ff;
+  --radial-gradient-end: #656df7;
+}
+
+/*============== 
+             CSS RESET
+===============*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.5s linear;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  padding: 0 4rem;
+  background: var(--body-background);
+  grid: repeat(12, 1fr) / repeat(12, 1fr);
+  color: var(--hero-text-color);
+  overflow: hidden;
+
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+/*===============
+            CSS CLASSES 
+===============*/
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-btn {
+  justify-content: space-between;
+}
+
+.items-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/*==============
+           GRID LAYOUT 
+===============*/
+.header {
+  grid-area: 1 / 1 / 2 / 13;
+  /* outline: 2px solid palevioletred; */
+}
+
+.main__container {
+  grid-area: 2 / 1 / 12 / 13;
+  outline: 2px solid lightskyblue;
+}
+
+.bottom__container {
+  grid-area: 11 / 1 / 13 / 13;
+  outline: 2px solid lightgreen;
+  margin: 1.5rem 0;
+}
+
+/*=================
+             HEADER START HERE 
+=================*/
+.header {
+  position: relative;
+  z-index: 1000;
+  /* background-color: lightskyblue; */
+  align-items: flex-end;
+}
+
+.navbar a {
+  color: var(--hero-text-color);
+  margin: 0 1.5rem;
+}
+
+.navbar a:hover {
+  color: var(--radial-gradient-end);
+}
+
+.brand img {
+  width: 24px;
+}
+
+.menu-icon img {
+  width: 25px;
+}
+
+ion-icon {
+  font-size: 1.3rem;
+}
+
+.icons a {
+  color: var(--hero-text-color);
+  margin-left: 1rem;
+}
+
+.icons a:hover {
+  color: var(--radial-gradient-end);
+}
+
+
+
+/*=========================
+((((((((((((( RESPONSIVE HEADER ))))))))))))
+======= =================*/
+@media screen and (max-width:680px) {
+
+    body{
+        padding: 0;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -150%;
+        width: 100%;
+        background: lightyellow;
+        border-top: .1rem solid red;
+    }
+
+    .navbar.active{
+        left: 0;
+    }
+
+    .navbar a{
+        background: coral;
+        border: 2px solid purple;
+        border-radius: .5rem;
+        padding: .8rem;
+        margin: 1.5rem;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+/*==========================
+          HOME SECTION STYLING START HERE 
+===========================*/
+
+.main__container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-container-box{
+  display: flex;
+}
+
+.content{
+  flex: 1 0 30%;
+  align-self: center;
+}
+
+.content span{
+  color: var(--the-hubles-color);
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+}
+
+.content h1{
+  color: var(--hero-text-color);
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.content p{
+  color: var(--para-color);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.order-now-btn {
+	background-color:transparent;
+	border-radius:28px;
+	border:1px solid #656cf7;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+  padding: 5px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #10111a;
+  margin-top: 3rem;
+}
+.order-now-btn:hover {
+	background-color:transparent;
+}
+.order-now-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.order-now-btn img{
+  margin-left: 2.3rem;
+  width: 7%;
+}
+
+.cycle-image{
+  display: grid;
+  place-items: center;
+}
+
+.cycle-image{
+  flex: 1 0 70%;
+}
+
+.e-bike-img{
+  width: 100%;
+  object-fit: fill;
+}
+
+
