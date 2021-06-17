@@ -75,7 +75,7 @@ html {
 ===============*/
 .header {
   grid-area: 1 / 1 / 2 / 13;
-  /* outline: 2px solid palevioletred; */
+  outline: 2px solid palevioletred;
 }
 
 .main__container {
@@ -182,6 +182,7 @@ ion-icon {
 .content{
   flex: 1 0 30%;
   align-self: center;
+  outline: 2px dotted pink;
 }
 
 .content span{
@@ -233,15 +234,84 @@ ion-icon {
 .cycle-image{
   display: grid;
   place-items: center;
-}
-
-.cycle-image{
   flex: 1 0 70%;
+  outline: 2px dotted rgb(228, 128, 145);
 }
 
 .e-bike-img{
   width: 100%;
   object-fit: fill;
 }
+
+
+
+/*=====================
+        RESPONSIVE HOME SECTION 
+ ====================*/
+
+
+
+
+
+
+
+
+/*=====================
+        BOTTOM SECTION STYLING
+ ====================*/
+
+ .bottom__container{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 0 10em;
+ }
+
+ .bottom-container-box{
+   width: 50%;
+   display: flex;
+   justify-content: space-between;
+   background: rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(7px) brightness(2);
+   border-radius: 10px;
+   padding: .8rem 1.6rem;
+ }
+
+.bottom-content p{
+  color: var(--para-color);
+  font-size: .7rem;
+  line-height: 2rem;
+}
+
+.three-dots{
+  grid-area: 6 / 12 / 8 / 13;
+  outline: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem;
+}
+
+
+.dot:nth-child(2){
+  width: 10px;
+  height: 10px;
+  background: var(--hero-text-color);
+  border-radius: 50%;
+}
+
+.dot:first-child , .dot:last-child{
+  width: 7px;
+  height: 7px;
+  border: 2px solid var(--hero-text-color);
+  border-radius: 50%;
+}
+
+
+
+
+
+
 
 
