@@ -28,6 +28,7 @@
   border: none;
   -webkit-font-smoothing: antialiased;
   transition: all 0.5s linear;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -135,11 +136,12 @@ html {
 }
 
 .brand img {
-  width: 24px;
+  width: 70%;
 }
 
 .menu-icon img {
-  width: 25px;
+  width: 27%;
+  /* -webkit-tap-highlight-color: transparent; */
 }
 
 ion-icon {
@@ -163,7 +165,7 @@ ion-icon {
 @media screen and (max-width:680px) {
 
     body{
-        padding: 0;
+        padding: 0 .5rem;
     }
 
     .navbar{
@@ -187,6 +189,19 @@ ion-icon {
         margin: 1.5rem;
         display: block;
         text-align: center;
+    }
+
+    ion-icon {
+      font-size: 1.5rem;
+    }
+
+    /* .brand img {
+      width: 100%;
+    } */
+    
+    .menu-icon img {
+      width: 35px;
+      /* -webkit-tap-highlight-color: transparent; */
     }
 }
 
@@ -361,9 +376,9 @@ ion-icon {
 
 
 
-
-
-
+/* ========
+       BLOBS 
+=========*/
 .blob-one img{
   width: 30%;
    object-fit: cover;
