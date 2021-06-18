@@ -89,6 +89,32 @@ html {
   margin: 1.5rem 0;
 }
 
+.blob-one{
+  grid-area: 10 / 11 / 12 / 13;
+  outline: 1px solid coral;
+  display: grid;
+  place-items: center;
+}
+
+.blob-two{
+  grid-area: 10 / 5 / 12  /  7;
+  outline: 1px solid coral;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width:800px) {
+
+  .blob-one{
+    grid-area: 3 / 10 / 5 / 12;
+  }
+
+  .blob-two{
+    grid-area: 9 / 1 / 11 / 3;
+  }
+  
+}
+
 /*=================
              HEADER START HERE 
 =================*/
@@ -264,15 +290,15 @@ ion-icon {
    display: flex;
    align-items: center;
    justify-content: flex-end;
-   padding: 0 10em;
+   padding: 0 5em;
  }
 
  .bottom-container-box{
-   width: 50%;
+   width: 60%;
    display: flex;
    justify-content: space-between;
-   background: rgba(0, 0, 0, 0.3);
-   backdrop-filter: blur(7px) brightness(2);
+   background: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(4px) brightness(2);
    border-radius: 10px;
    padding: .8rem 1.6rem;
  }
@@ -289,7 +315,7 @@ ion-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   gap:1rem;
 }
 
@@ -311,7 +337,39 @@ ion-icon {
 
 
 
+/*=====================
+        RESPONSIVE BOTTOM SECTION 
+ ====================*/
+
+@media screen and (max-width:1080px) {
+  .bottom__container {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .bottom-container-box{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:300px) {
+    .bottom-container-box{
+    width: 100%;
+    padding: 0;
+  }
+}
 
 
 
 
+
+
+.blob-one img{
+  width: 30%;
+   object-fit: cover;
+}
+
+.blob-two img{
+  width: 20%;
+   object-fit: cover;
+}
