@@ -173,7 +173,8 @@ ion-icon {
         top: 100%;
         left: -150%;
         width: 100%;
-        background: lightyellow;
+        background: var(--body-background);
+       
         border-top: .1rem solid red;
     }
 
@@ -182,8 +183,9 @@ ion-icon {
     }
 
     .navbar a{
-        background: coral;
-        border: 2px solid purple;
+        background:  var(--hero-text-color);
+        border: 2px solid var(--the-hubles-color);
+        color: var(--body-background);
         border-radius: .5rem;
         padding: .8rem;
         margin: 1.5rem;
