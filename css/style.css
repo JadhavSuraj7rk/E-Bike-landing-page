@@ -175,7 +175,7 @@ ion-icon {
         width: 100%;
         background: var(--body-background);
        
-        border-top: .1rem solid red;
+        border-top: .1rem solid var(--the-hubles-color);
     }
 
     .navbar.active{
