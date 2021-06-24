@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
 
-/*============== 
-             CSS Variables 
+/*==============
+             CSS Variables
 ===============*/
 :root {
   --body-background: #192023;
@@ -12,7 +12,7 @@
   --radial-gradient-end: #656df7;
 }
 
-/*============== 
+/*==============
              CSS RESET
 ===============*/
 
@@ -50,7 +50,7 @@ html {
 }
 
 /*===============
-            CSS CLASSES 
+            CSS CLASSES
 ===============*/
 
 .grid {
@@ -71,7 +71,7 @@ html {
 }
 
 /*==============
-           GRID LAYOUT 
+           GRID LAYOUT
 ===============*/
 .header {
   grid-area: 1 / 1 / 2 / 13;
@@ -116,7 +116,7 @@ html {
 }
 
 /*=================
-             HEADER START HERE 
+             HEADER START HERE
 =================*/
 .header {
   position: relative;
@@ -204,7 +204,7 @@ ion-icon {
 }
 
 /*==========================
-          HOME SECTION STYLING START HERE 
+          HOME SECTION STYLING START HERE
 ===========================*/
 
 .main__container {
@@ -315,7 +315,7 @@ ion-icon {
 }
 
 /*=====================
-        RESPONSIVE HOME SECTION 
+        RESPONSIVE HOME SECTION
  ====================*/
 @media screen and (max-width: 600px) {
   .cycle-image {
@@ -406,7 +406,7 @@ ion-icon {
 }
 
 /*=====================
-        RESPONSIVE BOTTOM SECTION 
+        RESPONSIVE BOTTOM SECTION
  ====================*/
 
 @media screen and (max-width: 1080px) {
@@ -428,7 +428,7 @@ ion-icon {
 }
 
 /* ========
-       BLOBS 
+       BLOBS
 =========*/
 .blob-one img {
   width: 30%;
